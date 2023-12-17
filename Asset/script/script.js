@@ -37,9 +37,12 @@ document.body.addEventListener('click', (e) => {
   console.log(e.target.parentElement)
   if (e.target.className === "fa-solid fa-plus addProject" || e.target.className === "addProject" ){
   formulaireDiv.classList.add('visible')
+  addBtn.classList.add('hidden')
   } else if (e.target.className === "cancel") {
     form.reset()
     formulaireDiv.classList.remove('visible')
+    addBtn.classList.remove('hidden')
+
   } 
 })
 

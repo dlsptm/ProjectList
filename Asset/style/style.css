@@ -142,6 +142,10 @@ label {
   opacity: 1;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
